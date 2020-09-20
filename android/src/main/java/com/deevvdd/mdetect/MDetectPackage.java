@@ -1,4 +1,4 @@
-package com.rnmdetect.mdetect;
+package com.deevvdd.mdetect;
 
 import androidx.annotation.NonNull;
 
@@ -15,34 +15,18 @@ import java.util.List;
 
 public  class MDetectPackage implements ReactPackage {
 
-    private MDetect mDetect = null;
-    private static MDetectPackage instance = null;
-
-    @NonNull
-    @Override
     public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
-        mDetect = new MDetect(reactContext);
-        if (instance == null) {
-            instance = this;
-        }
-        return Arrays.<NativeModule>asList(mDetect);
+        List<NativeModule> modules = new ArrayList<>();
+        modules.add(new MDetect(reactContext));
+        return  modules;
     }
 
-    @Override
     public List<Class<? extends JavaScriptModule>> createJSModules() {
         return Collections.emptyList();
     }
 
-    public static MDetectPackage getInstance() {
-        if (instance == null) {
-            instance = new MDetectPackage();
-        }
-        return instance;
-    }
-
-    @NonNull
-    @Override
     public List<ViewManager> createViewManagers(@NonNull ReactApplicationContext reactContext) {
         return Collections.emptyList();
     }
+
 }

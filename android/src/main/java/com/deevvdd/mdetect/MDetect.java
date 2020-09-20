@@ -1,4 +1,4 @@
-package com.rnmdetect.mdetect;
+package com.deevvdd.mdetect;
 
 import android.util.Log;
 import android.view.ViewGroup;
