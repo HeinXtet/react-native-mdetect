@@ -1,6 +1,6 @@
 {
   "name": "react-native-mdetect",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Unicode and Zawgyi font detecting library for React Native.",
   "main": "index",
   "rnpm": {
