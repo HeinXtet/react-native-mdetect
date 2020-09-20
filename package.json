@@ -1,0 +1,37 @@
+{
+  "name": "react-native-mdetect",
+  "version": "0.0.1",
+  "description": "Unicode and Zawgyi font detecting library for React Native.",
+  "main": "index",
+  "rnpm": {
+    "android": {
+      "packageInstance": "MDetectPackage.getInstance()"
+    }
+  },
+  "scripts": {
+    "test": "flow"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "react",
+    "font",
+    "unicode",
+    "zawgyi",
+    "font checker"
+  ],
+  "author": "Hein Htet <deevvdd@gmail.com>",
+  "homepage": "https://github.com/HeinXtet/react-native-mdetect",
+  "bugs": {
+    "url": "https://github.com/HeinXtet/react-native-mdetect/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/HeinXtet/react-native-mdetect.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "file": "^0.2.2"
+  }
+}
